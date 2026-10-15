@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Home,
   TrendingUp,
@@ -28,10 +27,10 @@ const loanCategories = [
    },
   { label: "VA Mortgage Loans", slug: "/va-home-loans", icon: Award },
   { label: "Jumbo Loans", slug: "/jumbo-loans", icon: Building2 },
-  { label: "Home Equity Loans", slug: "/home-equity-loans", icon: Landmark },
+  { label: "Home Equity Loans", slug: "/va-home-loans", icon: Landmark },
   {
-    label: "Reverse Mortgage Loans",
-    slug: "/reverse-mortgage-loans",
+    label: "Rehab Mortgage Loans",
+    slug: "/rehab-loans",
     icon: Home,
   },
 ];
