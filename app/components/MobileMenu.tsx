@@ -36,8 +36,8 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
         <Link href="/" onClick={onClose} className="flex items-center gap-3">
           <div className="relative h-20 w-32 overflow-hidden rounded-full">
             <Image
-              src="/img/logo.png"
-              alt="Advanced Mortgage LLC Logo"
+              src="/img/A3D.png"
+              alt="Advanced Mortgage LLC A3D"
               width={100}
               height={100}
               className="object-cover w-30 h-20"
@@ -77,7 +77,9 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
           type="button"
           onClick={() => setLoanOpen((v) => !v)}
           className={`flex items-center justify-between rounded-xl px-3 py-3 hover:bg-muted ${
-            pathname.startsWith("/loan-programs") ? "text-primary" : "text-foreground"
+            pathname.startsWith("/loan-programs")
+              ? "text-primary"
+              : "text-foreground"
           }`}
         >
           <span className="flex items-center gap-3">

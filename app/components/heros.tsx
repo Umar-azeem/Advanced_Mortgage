@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
 
 function Heros() {
   return (
@@ -14,7 +14,6 @@ function Heros() {
         />
         <div className="absolute rounded-2xl inset-0 bg-gradient-to-r from-[#6507E9]/85 to-[#6507E9]/85" />
       </div>
-
       <div className="relative z-10 mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-24">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left: Text */}
@@ -22,25 +21,26 @@ function Heros() {
             <h1 className="text-3xl font-black uppercase leading-[1.05] tracking-tight text-white sm:text-4xl lg:text-5xl">
               Advanced Mortgage LLC
             </h1>
-
             <p className="mt-6 text-base leading-relaxed text-white/90 sm:text-lg">
               We understand that buying a home in today’s dynamic market can
-              feel overwhelming. At Advanced Mortgage LLC, we’re here to
-              guide you through every step of the journey, offering
-              personalized solutions and expert advice tailored to current
-              trends.
+              feel overwhelming. At Advanced Mortgage LLC, we’re here to guide
+              you through every step of the journey, offering personalized
+              solutions and expert advice tailored to current trends.{" "}
+              <span className="text-[#6aff0d]">
+                State Licenses: MD, VA, DC, PA, DC, FL, & WV
+              </span>
             </p>
-
-            {/* Buttons */}
             <div className="mt-9 flex flex-wrap items-center gap-6">
-             <Link href="/loan-programs"> <button className="rounded-md bg-[#4d00b8] px-8 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all hover:scale-105 hover:bg-[#6507E9]/90">
-                View Loan Types
-              </button>
+              <Link href="/loan-programs">
+                {" "}
+                <button className="rounded-md bg-[#4d00b8] px-8 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all hover:scale-105 hover:bg-[#6507E9]/90">
+                  View Loan Types
+                </button>
               </Link>
               <button className="flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-white transition-all hover:scale-105 hover:text-[#63F807]/90">
-              <Link href="/contact">
-                Begin Application
-                <span aria-hidden>&rarr;</span>
+                <Link href="/contact">
+                  Begin Application
+                  <span aria-hidden>&rarr;</span>
                 </Link>
               </button>
             </div>
@@ -53,12 +53,13 @@ function Heros() {
           </div>
 
           {/* Right image */}
-<div className="relative w-full max-w-sm mx-auto aspect-[16/9] overflow-hidden rounded-2xl shadow-2xl lg:mx-0 lg:ml-auto lg:max-w-md">            <Image
+          <div className="relative w-full max-w-sm mx-auto aspect-[3/2] overflow-hidden rounded-2xl shadow-2xl lg:mx-0 lg:ml-auto lg:max-w-md">
+            <Image
               src="/img/fi.png"
               alt="Advanced Mortgage LLC"
-              width={100}
-              height={70}
-              className="h-60 w-96 rounded-2xl "
+              fill
+              sizes="(max-width: 1024px) 100vw, 28rem"
+              className="object-contain"
             />
           </div>
         </div>

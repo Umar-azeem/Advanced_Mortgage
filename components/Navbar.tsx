@@ -29,34 +29,39 @@ export function Navbar() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-30 border-b border-border/60 bg-background/80 backdrop-blur-xl">
-        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8 m-1 md:m-4">
           <Link
             href="/"
-            className="flex items-center gap-3 font-mono text-sm font-bold tracking-widest"
+            className="flex items-center gap-3 text-sm font-bold tracking-widest"
           >
-            <div className="relative h-20 w-32 overflow-hidden rounded-full">
+            <div className="h-14 w-20 md:h-24 md:w-32 overflow-hidden rounded-md">
               <Image
-                src="/img/logo.png"
-                alt="Advanced Mortgage LLC Logo"
-                width={100}
-                height={100}
-                className="object-cover w-30 h-20"
+                src="/img/A3D.png"
+                alt="Advanced Mortgage LLC A3D"
+                width={160}
+                height={160}
+                className="h-full w-full object-cover"
               />
             </div>
           </Link>
 
           <nav className="hidden items-center gap-8 text-sm md:flex">
-            <Link href="/" className={`flex items-center gap-1.5 ${active("/")}`}>
-              <Home className="size-4" />
+            <Link
+              href="/"
+              className={`flex items-center gap-1.5 ${active("/")}`}
+            >
+              <Home className="size-4"/>
               Home
             </Link>
 
-            <Link href="/about" className={`flex items-center gap-1.5 ${active("/about")}`}>
+            <Link
+              href="/about"
+              className={`flex items-center gap-1.5 ${active("/about")}`}
+            >
               <Info className="size-4" />
               About
             </Link>
 
-            {/* Loan Programs dropdown — trigger + gap + panel are ONE hoverable block */}
             <div
               className="relative"
               onMouseEnter={() => setLoanDrop(true)}
@@ -77,7 +82,6 @@ export function Navbar() {
                 />
               </button>
 
-              {/* pt-4 (not mt-4) keeps the gap inside the hoverable area, no dead zone */}
               <div
                 className={`absolute right-0 top-full w-64 pt-4 transition-opacity ${
                   loanDrop
@@ -111,7 +115,10 @@ export function Navbar() {
               Privacy Policy
             </Link>
 
-            <Link href="/contact" className={`flex items-center gap-1.5 ${active("/contact")}`}>
+            <Link
+              href="/contact"
+              className={`flex items-center gap-1.5 ${active("/contact")}`}
+            >
               <Phone className="size-4" />
               Contact
             </Link>

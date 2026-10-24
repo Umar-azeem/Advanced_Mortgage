@@ -142,6 +142,13 @@ This inquiry was sent from the Advanced Mortgage LLC website.`,
                 >
                   Office: 941.223.2125
                 </a>
+                <a
+                  href="tel:+19412232125"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group ml-8"
+                >
+                    Fax: 301-576-5593
+                </a>
+              
               </div>
             </div>
 
