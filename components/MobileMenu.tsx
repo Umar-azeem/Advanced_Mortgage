@@ -40,7 +40,7 @@ export function MobileMenu({
             href="/"
             className="flex items-center gap-3 text-sm font-bold tracking-widest"
           >
-            <div className="h-14 w-20 md:h-24 md:w-32 overflow-hidden rounded-md">
+            <div className="h-12 w-32 md:h-24 md:w-32 overflow-hidden rounded-md">
               <Image
                 src="/img/AML.png"
                 alt="Advanced Mortgage LLC A3D"
