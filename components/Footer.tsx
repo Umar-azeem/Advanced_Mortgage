@@ -8,20 +8,20 @@ export function Footer() {
     <footer className="border-t rounded-xl border-border bg-[#6507E9] text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 lg:grid-cols-[1.5fr_1fr_1fr_1fr] lg:px-8">
         <div>
-           <Link
-  href="/"
-  className="flex items-center gap-3 text-sm font-bold tracking-widest"
->
-  <div className="h-14 w-20 md:h-24 md:w-32 overflow-hidden rounded-md">
-    <Image
-      src="/img/A3D.png"
-      alt="Advanced Mortgage LLC A3D"
-      width={160}
-      height={160}
-      className="h-full w-full object-cover"
-    />
-  </div>
-</Link>
+          <Link
+            href="/"
+            className="flex items-center gap-3 text-sm font-bold tracking-widest"
+          >
+            <div className=" h-24 w-72 overflow-hidden rounded-md">
+              <Image
+                src="/img/AML.png"
+                alt="Advanced Mortgage LLC A3D"
+                width={160}
+                height={160}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Link>
 
           <p className="mt-5  max-w-xs text-sm leading-6 text-white">
             Digital experiences for companies with somewhere meaningful to go.

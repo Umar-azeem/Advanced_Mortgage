@@ -36,20 +36,20 @@ export function MobileMenu({
         className={`fixed inset-y-0 left-0 z-50 flex w-[min(84vw,22rem)] flex-col overflow-y-auto bg-background p-6 shadow-2xl transition-transform duration-300 md:hidden ${open ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex items-center justify-between">
-            <Link
-  href="/"
-  className="flex items-center gap-3 text-sm font-bold tracking-widest"
->
-  <div className="h-14 w-20 md:h-24 md:w-32 overflow-hidden rounded-md">
-    <Image
-      src="/img/A3D.png"
-      alt="Advanced Mortgage LLC A3D"
-      width={160}
-      height={160}
-      className="h-full w-full object-cover"
-    />
-  </div>
-</Link>
+          <Link
+            href="/"
+            className="flex items-center gap-3 text-sm font-bold tracking-widest"
+          >
+            <div className="h-14 w-20 md:h-24 md:w-32 overflow-hidden rounded-md">
+              <Image
+                src="/img/AML.png"
+                alt="Advanced Mortgage LLC A3D"
+                width={160}
+                height={160}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </Link>
 
           <button
             onClick={onClose}

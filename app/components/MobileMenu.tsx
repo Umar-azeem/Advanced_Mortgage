@@ -36,7 +36,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
         <Link href="/" onClick={onClose} className="flex items-center gap-3">
           <div className="relative h-20 w-32 overflow-hidden rounded-full">
             <Image
-              src="/img/A3D.png"
+              src="/img/AML.png"
               alt="Advanced Mortgage LLC A3D"
               width={100}
               height={100}

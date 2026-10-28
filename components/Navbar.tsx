@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -34,9 +33,9 @@ export function Navbar() {
             href="/"
             className="flex items-center gap-3 text-sm font-bold tracking-widest"
           >
-            <div className="h-14 w-20 md:h-24 md:w-32 overflow-hidden rounded-md">
+            <div className="h-14 w-42 md:h-24 md:w-72 overflow-hidden rounded-md">
               <Image
-                src="/img/A3D.png"
+                src="/img/AML.png"
                 alt="Advanced Mortgage LLC A3D"
                 width={160}
                 height={160}
@@ -50,7 +49,7 @@ export function Navbar() {
               href="/"
               className={`flex items-center gap-1.5 ${active("/")}`}
             >
-              <Home className="size-4"/>
+              <Home className="size-4" />
               Home
             </Link>
 
@@ -124,7 +123,9 @@ export function Navbar() {
             </Link>
 
             <Link
-              href="/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://1762428.my1003app.com/460665/register"
               className="rounded-full bg-primary px-4 py-2 font-semibold text-primary-foreground transition hover:brightness-110"
             >
               Apply Now
