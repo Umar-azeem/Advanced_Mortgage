@@ -59,7 +59,7 @@ function Heros() {
               alt="Advanced Mortgage LLC"
               fill
               sizes="(max-width: 1024px) 100vw, 28rem"
-              className="object-contain"
+              className="object-contain  rounded-2xl"
             />
           </div>
         </div>

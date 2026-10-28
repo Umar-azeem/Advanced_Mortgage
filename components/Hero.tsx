@@ -34,13 +34,13 @@ export function Hero() {
               <span className="absolute inset-0 -m-3 animate-ping-slow rounded-full border border-white" />
               <span className="absolute inset-0 -m-6 animate-ping-slower rounded-full border border-white" />
 
-              <div className="relative h-60 w-60 overflow-hidden rounded-full border-4 border-primary/20 shadow-xl shadow-primary/25 transition-transform duration-500 ease-out group-hover:scale-105">
+              <div className="relative  h-40 w-80 overflow-hidden rounded-full border-4 border-primary/20 shadow-xl shadow-primary/25 transition-transform duration-500 ease-out group-hover:scale-105">
                 <Image
-                  src="/img/cr.png"
+                  src="/img/fi.png"
                   alt="Charles M. Bucklin"
                   fill
                   sizes="240px"
-                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                  className="object-cover  transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
             </div>
